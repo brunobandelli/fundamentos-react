@@ -1,6 +1,8 @@
 import React from "react";
 import './App.css'
 
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Familia from "./components/basicos/Familia";
 import Card from './components/layout/Card'
@@ -15,6 +17,14 @@ export default _ =>
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+                <Card titulo="#07 - Desafio Repetição" color="#3A9AD9">
+                        <TabelaProdutos></TabelaProdutos>
+                </Card>
+
+                <Card titulo="#06 - Repetição" color="#FF4C65">
+                        <ListaAlunos></ListaAlunos>
+                </Card>
+
                 <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
                     <Familia sobrenome="Bandelli">
                         <FamiliaMembro nome="Bruno"/>
